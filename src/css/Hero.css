@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Lilita+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap");
+
+.main-hero {
+  background-color: #1b2f49;
+  background-image: url(./bgdiscord.svg);
+  background-position: bottom;
+  background-size: 200%;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0;
+  padding: 100px;
+}
+
+.main-hero .hero-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 0;
+  padding: 50px 100px;
+}
+
+.main-hero .hero-container h1 {
+  font-family: "Bangers", cursive;
+  font-size: 90px;
+  margin: 0%;
+  color: #ecd062;
+}
+
+.main-hero .hero-container p {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 30px;
+  margin: 0%;
+  color: #ecd062;
+}
+
+.main-hero .hero-container button {
+  background-color: white;
+  height: 80px;
+  width: 300px;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  font-family: "Bangers", cursive;
+  font-size: 30px;
+  margin: 0%;
+  margin-top: 30px;
+  color: #162130;
+  cursor: pointer;
+}
+
+.main-hero .hero-container button:hover {
+  transform: scale(1.1);
+  font-size: 35px;
+}
+
+.main-hero .hero-container button i {
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 1040px) {
+  .main-hero {
+    background-position: bottom 0px right 50%;
+    background-size: 250%;
+  }
+  .main-hero .hero-container {
+    padding: 0;
+  }
+  .main-hero .hero-container h1 {
+    font-size: 70px;
+  }
+  .main-hero .hero-container p {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .main-hero {
+    background-position: bottom 0px right 25%;
+    background-size: 300%;
+  }
+
+  .main-hero .hero-container {
+    align-items: center;
+    padding: 0;
+    padding-bottom: 200px;
+  }
+  .main-hero .hero-container h1 {
+    font-size: 70px;
+  }
+  .main-hero .hero-container p {
+    font-size: 25px;
+  }
+
+  .main-hero .hero-container button {
+    height: 70px;
+    width: 250px;
+    font-size: 25px;
+  }
+  .main-hero .hero-container button:hover {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 592px) {
+  .main-hero {
+    padding: 50px;
+    background-size: 350%;
+  }
+  .main-hero .hero-container h1 {
+    font-size: 60px;
+  }
+  .main-hero .hero-container p {
+    font-size: 18px;
+  }
+  .main-hero .hero-container button {
+    height: 65px;
+    width: 230px;
+    font-size: 20px;
+  }
+}

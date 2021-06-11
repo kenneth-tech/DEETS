@@ -1,0 +1,297 @@
+.main-commands {
+  height: 160vh;
+  width: 100vw;
+  max-width: 100%;
+  padding: 50px 100px;
+  background-color: var(--color-4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.main-commands h1 {
+  color: var(--color-3);
+  font-family: "Bangers", cursive;
+  margin: 70px;
+  width: 100%;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-commands .commands-table {
+  height: 40%;
+  width: 70%;
+  color: white;
+  border-collapse: collapse;
+  margin-bottom: 100px !important;
+}
+
+.main-commands .commands-table tr {
+  border-top: var(--color-1) solid 2px;
+}
+
+.main-commands .commands-table th {
+  font-family: "Open Sans Condensed", sans-serif;
+  color: var(--color-3);
+  margin: 0;
+}
+
+.main-commands .commands-table td {
+  font-family: "Open Sans Condensed", sans-serif;
+  margin: 0;
+}
+
+.main-commands button {
+  background-color: white;
+  height: 80px;
+  width: 300px;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  font-family: "Bangers", cursive;
+  font-size: 30px;
+  margin: 0%;
+  margin-top: 80px;
+  color: #162130;
+  cursor: pointer;
+}
+
+.main-commands button:hover {
+  transform: scale(1.1);
+  font-size: 35px;
+}
+
+.main-commands button i {
+  margin-right: 10px;
+}
+
+.main-commands .discord-add {
+  width: 100%;
+  height: 500px;
+  padding: 0px 100px;
+  margin-top: 50px;
+}
+
+.main-commands .discord-add .discord-container {
+  height: 100%;
+  width: 100%;
+  background-color: #fa8bff;
+  background-image: linear-gradient(
+    45deg,
+    #fa8bff 0%,
+    #2bd2ff 52%,
+    #2bff88 90%
+  );
+  border-radius: 200px;
+}
+
+.main-commands .discord-add .discord-container .discord-bg {
+  height: 100%;
+  width: 100%;
+  border-radius: 200px;
+  background-image: url(./bgdiscord.svg);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.main-commands .discord-add .discord-container .discord-bg div {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-commands .discord-add .discord-container .discord-bg div h2 {
+  font-family: "Bangers", cursive;
+  color: var(--color-1);
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-size: 35px;
+}
+
+.main-commands .discord-add .discord-container .discord-bg div p {
+  font-family: "Open Sans Condensed", sans-serif;
+  color: white;
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+.main-commands
+  .discord-add
+  .discord-container
+  .discord-bg
+  div
+  .buttons-discord {
+  width: 100%;
+  padding: 0;
+}
+
+.main-commands
+  .discord-add
+  .discord-container
+  .discord-bg
+  div
+  .buttons-discord
+  button {
+  height: 70px;
+  width: 250px;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  font-family: "Bangers", cursive;
+  font-size: 20px;
+  margin: 0%;
+  margin-top: 0px;
+  cursor: pointer;
+}
+
+.main-commands
+  .discord-add
+  .discord-container
+  .discord-bg
+  div
+  .buttons-discord
+  button:nth-child(1) {
+  background-color: white;
+  color: #162130;
+}
+
+.main-commands
+  .discord-add
+  .discord-container
+  .discord-bg
+  div
+  .buttons-discord
+  button:nth-child(2) {
+  margin-top: 10px;
+  background-color: var(--color-1);
+  color: var(--color-3);
+}
+
+.main-commands
+  .discord-add
+  .discord-container
+  .discord-bg
+  div
+  .buttons-discord
+  button
+  :hover {
+  transform: scale(1.1);
+  font-size: 35px;
+}
+
+.main-commands
+  .discord-add
+  .discord-container
+  .discord-bg
+  div
+  .buttons-discord
+  button
+  i {
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 1474px) {
+  .main-commands .discord-add {
+    padding: 0px 20px;
+  }
+
+  .main-commands .discord-add .discord-container {
+    border-radius: 100px;
+  }
+
+  .main-commands .discord-add .discord-container .discord-bg {
+    border-radius: 100px;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .main-commands {
+    padding: 50px;
+  }
+  .main-commands .commands-table {
+    width: 90%;
+  }
+
+  .main-commands h1 {
+    font-size: 25px;
+  }
+
+  .main-commands .commands-table th {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    font-size: 15px;
+  }
+
+  .main-commands .commands-table td {
+    font-size: 15px;
+  }
+
+  .main-commands .discord-add .discord-container .discord-bg {
+    border-radius: 50px;
+  }
+
+  .main-commands .discord-add .discord-container {
+    border-radius: 50px;
+  }
+
+  .main-commands .discord-add .discord-container .discord-bg div h2 {
+    font-size: 25px;
+  }
+
+  .main-commands .discord-add .discord-container .discord-bg div p {
+    font-size: 18px;
+  }
+
+  .main-commands
+    .discord-add
+    .discord-container
+    .discord-bg
+    div
+    .buttons-discord
+    button {
+    height: 60px;
+    width: 200px;
+    font-size: 16px;
+  }
+
+  .main-commands
+    .discord-add
+    .discord-container
+    .discord-bg
+    div
+    .buttons-discord
+    button
+    :hover {
+    transform: scale(1.1);
+    font-size: 35px;
+  }
+
+  .main-commands
+    .discord-add
+    .discord-container
+    .discord-bg
+    div
+    .buttons-discord
+    button
+    i {
+    margin-right: 10px;
+  }
+}

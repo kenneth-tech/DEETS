@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Lilita+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap");
+
+.main-herofeatures {
+  height: 200vh;
+  width: 100%;
+  padding: 100px;
+  background-color: var(--color-5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-herofeatures .features-title {
+  font-family: "Bangers", cursive;
+  color: var(--color-3);
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.main-herofeatures .features-dec {
+  font-family: "Open Sans Condensed", sans-serif;
+  color: white;
+  font-size: 25px;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.main-herofeatures .container-features {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+}
+
+.main-herofeatures .container-features div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-herofeatures .container-features .features-1 {
+  padding-left: 150px;
+}
+
+.main-herofeatures .container-features .features-2 {
+  padding-right: 150px;
+}
+
+.main-herofeatures .container-features .features-3 {
+  padding-left: 150px;
+}
+
+.main-herofeatures .container-features .features-4 {
+  padding-right: 150px;
+}
+
+.main-herofeatures .container-features div img {
+  height: auto;
+  width: 300px;
+}
+
+.main-herofeatures .container-features div h2 {
+  font-family: "Bangers", cursive;
+  color: var(--color-3);
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-size: 30px;
+}
+
+.main-herofeatures .container-features div p {
+  font-family: "Open Sans Condensed", sans-serif;
+  color: white;
+  font-size: 20px;
+  width: 400px;
+  text-align: center;
+}
+
+.main-herofeatures .discord-add {
+  width: 100%;
+  height: 500px;
+  padding: 0px 100px;
+}
+
+.main-herofeatures .discord-add .discord-container {
+  height: 100%;
+  width: 100%;
+  background-color: #fa8bff;
+  background-image: linear-gradient(
+    45deg,
+    #fa8bff 0%,
+    #2bd2ff 52%,
+    #2bff88 90%
+  );
+  border-radius: 200px;
+}
+
+.main-herofeatures .discord-add .discord-container .discord-bg {
+  height: 100%;
+  width: 100%;
+  border-radius: 200px;
+  background-image: url(./bgdiscord.svg);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.main-herofeatures .discord-add .discord-container .discord-bg div {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-herofeatures .discord-add .discord-container .discord-bg div h2 {
+  font-family: "Bangers", cursive;
+  color: var(--color-1);
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-size: 35px;
+}
+
+.main-herofeatures .discord-add .discord-container .discord-bg div p {
+  font-family: "Open Sans Condensed", sans-serif;
+  color: white;
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+.main-herofeatures
+  .discord-add
+  .discord-container
+  .discord-bg
+  div
+  .buttons-discord {
+  width: 100%;
+  padding: 0;
+}
+
+.main-herofeatures
+  .discord-add
+  .discord-container
+  .discord-bg
+  div
+  .buttons-discord
+  button {
+  height: 70px;
+  width: 250px;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  font-family: "Bangers", cursive;
+  font-size: 20px;
+  margin: 0%;
+  margin-top: 0px;
+  cursor: pointer;
+}
+
+.main-herofeatures
+  .discord-add
+  .discord-container
+  .discord-bg
+  div
+  .buttons-discord
+  button:nth-child(1) {
+  background-color: white;
+  color: #162130;
+}
+
+.main-herofeatures
+  .discord-add
+  .discord-container
+  .discord-bg
+  div
+  .buttons-discord
+  button:nth-child(2) {
+  margin-top: 10px;
+  background-color: var(--color-1);
+  color: var(--color-3);
+}
+
+.main-herofeatures
+  .discord-add
+  .discord-container
+  .discord-bg
+  div
+  .buttons-discord
+  button
+  :hover {
+  transform: scale(1.1);
+  font-size: 35px;
+}
+
+.main-herofeatures
+  .discord-add
+  .discord-container
+  .discord-bg
+  div
+  .buttons-discord
+  button
+  i {
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 1474px) {
+  .main-herofeatures .features-title {
+    font-size: 35px;
+  }
+
+  .main-herofeatures .features-dec {
+    font-size: 20px;
+  }
+  .main-herofeatures .container-features .features-1 {
+    padding-left: 20px;
+  }
+
+  .main-herofeatures .container-features .features-2 {
+    padding-right: 20px;
+  }
+
+  .main-herofeatures .container-features .features-3 {
+    padding-left: 20px;
+  }
+
+  .main-herofeatures .container-features .features-4 {
+    padding-right: 20px;
+  }
+
+  .main-herofeatures .container-features div img {
+    width: 250px;
+  }
+
+  .main-herofeatures .container-features div h2 {
+    font-size: 25px;
+  }
+
+  .main-herofeatures .container-features div p {
+    font-size: 15px;
+    width: 350px;
+    text-align: center;
+  }
+
+  .main-herofeatures .discord-add {
+    padding: 0px 20px;
+  }
+
+  .main-herofeatures .discord-add .discord-container {
+    border-radius: 100px;
+  }
+
+  .main-herofeatures .discord-add .discord-container .discord-bg {
+    border-radius: 100px;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 1040px) {
+  .main-herofeatures {
+    padding: 50px;
+    padding-top: 100px;
+    height: 250vh;
+  }
+  .main-herofeatures .container-features {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  }
+  .main-herofeatures .container-features div {
+    padding: 0px !important;
+  }
+}

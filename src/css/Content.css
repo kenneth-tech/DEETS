@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Lilita+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap");
+
+.main-content {
+  background-color: var(--color-4);
+  height: 200vh;
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-content h1 {
+  font-family: "Bangers", cursive;
+  color: white;
+  font-size: 45px;
+  margin-top: 80px;
+}
+
+.main-content .content {
+  padding-top: 10px;
+  height: 100%;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+}
+
+.main-content .content div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 80px 80px;
+}
+
+.main-content .content div i {
+  transition: 0.5s ease;
+  padding: 20px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  font-size: 100px;
+  color: white;
+}
+
+.main-content .content div i:hover {
+  background-color: rgba(128, 128, 128, 0.363);
+  font-size: 150px;
+}
+
+.main-content .content div h1 {
+  margin: 0%;
+}
+
+.main-content .content div p {
+  color: white;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 25px;
+}
+
+.main-content button {
+  background-color: var(--color-1);
+  height: 80px;
+  width: 300px;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  font-family: "Bangers", cursive;
+  font-size: 30px;
+  color: var(--color-3);
+  cursor: pointer;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+button:hover {
+  transform: scale(1.1);
+  font-size: 35px;
+}
+
+.main-content button i {
+  margin-left: 10px;
+}
+
+.content-2 {
+  display: block !important;
+  padding: 0 !important;
+  background-color: #fa8bff;
+  background-image: linear-gradient(
+    45deg,
+    #fa8bff 0%,
+    #2bd2ff 52%,
+    #2bff88 90%
+  );
+}
+
+.content-3 {
+  display: block !important;
+  padding: 0 !important;
+  background-color: #fa8bff;
+  background-image: linear-gradient(
+    45deg,
+    #fa8bff 0%,
+    #2bd2ff 52%,
+    #2bff88 90%
+  );
+}
+
+.content-6 {
+  display: block !important;
+  padding: 0 !important;
+  background-color: #fa8bff;
+  background-image: linear-gradient(
+    45deg,
+    #fa8bff 0%,
+    #2bd2ff 52%,
+    #2bff88 90%
+  );
+}
+
+@media only screen and (max-width: 1474px) {
+  .main-content .content {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    padding: 0;
+    margin: 0;
+  }
+  .main-content .content div {
+    padding: 20px;
+  }
+  .content-3 {
+    grid-row: 4;
+  }
+
+  .main-content {
+    height: 250vh;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .main-content h1 {
+    font-size: 25px;
+  }
+  .main-content .content div {
+    padding: 0;
+  }
+  .main-content .content div p {
+    font-size: 20px;
+  }
+  .main-content .content div i {
+    font-size: 70px;
+  }
+  .main-content .content div i:hover {
+    font-size: 80px;
+  }
+  .main-content button {
+    height: 60px;
+    width: 250px;
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Lilita+One&display=swap');
+a {
+  text-decoration: none;
+  color: #ffcc00;
+}
+
+.navbar {
+  position: fixed;
+  background-color: #162130;
+  height: 70px;
+  width: 100%;
+  max-width: 100%;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.navbar .navbar-container {
+  height: 100%;
+  width: auto;
+  display: flex;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.navbar .navbar-container .navbar-logo {
+  height: 100%;
+  width: 200px;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Bangers', cursive;
+  font-size: 30px;
+}
+.navbar .navbar-container .navbar-logo .logo {
+  height: 30px;
+  margin-right: 5px;
+}
+
+.navbar .navbar-container .navbar-logo i {
+  margin-left: 10px;
+}
+
+.navbar .navbar-container .nav-menu {
+  font-family: 'Lilita One', cursive;
+  font-size: 18px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar .navbar-container .nav-menu .nav-item {
+  height: 100%;
+  width: 120px;
+  margin: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar .navbar-container .nav-menu .nav-item a:hover {
+  color: #ecd062;
+}
+
+.navbar .navbar-container .nav-menu .paypal {
+  background-color: none;
+  height: 60%;
+  width: 130px;
+  border: #2997d8 solid 2px;
+  border-radius: 15px;
+}
+
+.navbar .navbar-container .nav-menu .paypal a {
+  color: #2997d8;
+  font-size: 15px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar .navbar-container .nav-menu .paypal:hover {
+  background-color: #169bd7;
+}
+
+.navbar .navbar-container .nav-menu .paypal a:hover {
+  color: #253b80;
+}
+
+.navbar .navbar-container .nav-menu .paypal a i {
+  margin-right: 5px;
+}
+
+.navbar .navbar-container .menu-icon {
+  color: #ffcc00;
+  font-size: 30px;
+  display: none;
+}
+
+.mobile-menu {
+  display: none !important;
+  position: fixed;
+  margin: 0%;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #283950;
+  margin-top: 70px;
+  transition: 0.5s;
+}
+
+.mobile-menu ul {
+  font-family: 'Lilita One', cursive;
+  font-size: 35px;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-menu ul li {
+  height: 120px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.mobile-menu ul .paypal {
+  background-color: none;
+  height: 80px;
+  width: 200px;
+  border: #2997d8 solid 2px;
+  border-radius: 15px;
+}
+
+.mobile-menu ul .paypal a {
+  color: #2997d8;
+  font-size: 25px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-menu ul a:hover {
+  color: #ecd062;
+}
+
+.mobile-menu ul .paypal a:hover {
+  color: #253b80;
+}
+
+.mobile-menu ul .paypal:hover {
+  background-color: #169bd7;
+}
+
+.mobile-menu ul .paypal a i {
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 1040px) {
+  .navbar {
+    padding: 0;
+  }
+
+  .show {
+    display: block !important;
+  }
+
+  .navbar .navbar-container {
+    width: 100%;
+    padding: 10px;
+    padding-left: 50px;
+  }
+  .navbar .navbar-container .navbar-logo {
+    margin: auto;
+  }
+
+  .navbar .navbar-container .nav-menu {
+    display: none;
+  }
+
+  .navbar .navbar-container .menu-icon {
+    display: block;
+    height: 100%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
